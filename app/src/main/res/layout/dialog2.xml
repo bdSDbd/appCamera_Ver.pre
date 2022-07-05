@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#f2f2f2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" 請輸入數值"
+        android:textSize="30dp"
+        android:textColor="#000000"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/Gauge_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".6"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginStart="20dp"
+
+            android:ems="10"
+            android:inputType="text"
+            android:hint="錶編號"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/channel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".4"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginStart="5dp"
+
+            android:ems="10"
+            android:inputType="phone"
+            android:hint="通道"
+            android:textColor="#000000"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/inin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".6"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginStart="20dp"
+
+            android:inputType="phone"
+            android:hint="數值"
+            android:textColor="#000000"/>
+
+        <Spinner
+            android:id="@+id/unit_spinner"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="20dp"
+            android:layout_weight=".4" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/cancle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="取消"
+            android:textSize="30dp"
+            android:layout_gravity="center"
+            android:textColor="@color/theme_red"/>
+
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="確定"
+            android:textSize="30dp"
+            android:layout_gravity="center"
+            android:textColor="@color/theme_green"/>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.appcamera.MainActivity"
+    android:background="#f2f2f2">
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_above="@+id/show_image"
+        android:textColor="#000000"
+
+        android:clickable="true"
+
+        android:textSize="40sp"
+        android:text="請選擇辨識模式"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Cnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_above="@+id/number"
+        android:textColor="#000000"
+
+        android:clickable="true"
+
+        android:textSize="40sp"
+        android:text="(通道預設)"
+        android:textStyle="bold"
+        android:enabled="false"/>
+
+    <TextView
+        android:id="@+id/no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_above="@+id/Cnumber"
+        android:textColor="#000000"
+
+        android:textSize="40sp"
+        android:text="(編號預設)"
+        android:textStyle="bold"
+        android:enabled="false"/>
+
+    <ImageView
+        android:id="@+id/show_image"
+        android:layout_width="800px"
+        android:layout_height="800px"
+        android:layout_centerInParent="true"
+        android:src="@drawable/bg1"
+        android:text="Hello World!" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+
+        android:layout_below="@+id/show_image"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Count_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginHorizontal="20dp"
+            android:layout_weight=".2"
+            android:text="今日辨識件數 0 件"
+            android:textColor="#000000"
+            android:textSize="24sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".5"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_take_pic"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="5dp"
+                android:layout_weight="1"
+                android:text="自動\n偵測"
+                android:textColor="@color/theme_red"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_input"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="5dp"
+                android:layout_weight="1"
+                android:text="QRCode\n掃描"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_allinput"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="5dp"
+                android:layout_weight="1"
+                android:text="手動\n輸入"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight=".35">
+
+            <ImageButton
+                android:id="@+id/btn_send"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginVertical="5dp"
+                android:scaleType="fitCenter"
+                android:padding="10dp"
+                android:background="@color/title"
+                app:srcCompat="@drawable/ic_save_01" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/markedup"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:scaleType="fitCenter"
+        android:padding="5dp"
+
+
+        android:background="#00000000"
+        app:srcCompat="@drawable/ic_markup_02" />
+
+</RelativeLayout>

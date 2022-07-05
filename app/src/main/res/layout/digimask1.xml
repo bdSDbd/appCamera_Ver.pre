@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<com.example.appcamera.CalldigiMask1
+    android:id="@+id/CalldigiMask1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+
+<com.example.appcamera.DrawdigiMask1
+    android:id="@+id/DrawdigiMask1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:paddingHorizontal="40dp"
+
+        android:layout_marginTop="15dp">
+
+        <ImageButton
+            android:id="@+id/flashLight"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:background="#00000000"
+            android:scaleType="fitCenter"
+
+            android:src="@drawable/ic_flash_off" />
+
+        <ImageButton
+            android:id="@+id/EC"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:background="#00000000"
+            android:scaleType="fitCenter"
+
+            android:src="@drawable/ic_ec_on" />
+
+        <ImageButton
+            android:id="@+id/zoom"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:scaleType="fitCenter"
+            android:background="#00000000"
+
+            android:src="@drawable/ic_zoom_out" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/mask1_takePic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginBottom="25dp"
+
+        android:scaleType="fitCenter"
+        android:background="#00000000"
+
+        android:src ="@drawable/ic_take_pic_01" />
+
+
+</RelativeLayout>
+
+</FrameLayout>
