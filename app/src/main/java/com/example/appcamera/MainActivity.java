@@ -2103,7 +2103,7 @@ public class MainActivity extends AppCompatActivity {
 
     private List<Mat> prebuild1(Mat mat) {
         Mat open_kernel = Imgproc.getStructuringElement(Imgproc.MORPH_RECT, new Size(3, 3));
-        Mat dilate_kernel = Imgproc.getStructuringElement(Imgproc.MORPH_RECT, new Size(5, 11));
+        Mat dilate_kernel = Imgproc.getStructuringElement(Imgproc.MORPH_RECT, new Size(3, 11));
 
         Mat hsv = new Mat();
         Imgproc.cvtColor(mat, hsv, Imgproc.COLOR_BGR2HSV);
